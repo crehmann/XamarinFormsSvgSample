@@ -12,10 +12,14 @@
 
   <ItemGroup>
     <None Remove="Resources\navigate_next.svg" />
+    <None Remove="Resources\outline-refresh-24px.svg" />
+    <None Remove="Resources\outline-warning-24px.svg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\navigate_next.svg" />
+    <EmbeddedResource Include="Resources\outline-refresh-24px.svg" />
+    <EmbeddedResource Include="Resources\outline-warning-24px.svg" />
   </ItemGroup>
 
   <ItemGroup>

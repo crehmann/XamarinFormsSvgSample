@@ -3,11 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              mc:Ignorable="d"
              x:Class="XamarinFormsSvgSample.Views.ItemDetailPage"
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
+        <Label Text="Icon:" FontSize="Medium" />
+        <ffimageloadingsvg:SvgCachedImage 
+            Grid.Column="0" Grid.Row="0"
+            WidthRequest="100" HeightRequest="100"
+            ErrorPlaceholder="resource://XamarinFormsSvgSample.Resources.outline-warning-24px.svg"
+            FadeAnimationEnabled="True"
+            FadeAnimationDuration="1000"
+            FadeAnimationForCachedImages="False"
+            Source="{Binding Item.IconUrl}" />
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
