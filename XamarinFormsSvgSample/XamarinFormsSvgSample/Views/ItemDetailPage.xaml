@@ -12,11 +12,11 @@
         <Label Text="Icon:" FontSize="Medium" />
         <ffimageloadingsvg:SvgCachedImage 
             Grid.Column="0" Grid.Row="0"
-            WidthRequest="100" HeightRequest="100"
+            WidthRequest="200" HeightRequest="200"
             ErrorPlaceholder="resource://XamarinFormsSvgSample.Resources.outline-warning-24px.svg"
+            FadeAnimationForCachedImages="True"
             FadeAnimationEnabled="True"
-            FadeAnimationDuration="1000"
-            FadeAnimationForCachedImages="False"
+            FadeAnimationDuration="100"
             Source="{Binding Item.IconUrl}" />
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>

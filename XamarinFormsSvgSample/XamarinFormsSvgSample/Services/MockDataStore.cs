@@ -74,7 +74,7 @@ namespace XamarinFormsSvgSample.Services
             for (var i = 1; i < 100; i++)
             {
                 var iconIndex = rnd.Next(0, icons.Length - 1);
-                _items.Add(new Item(Guid.NewGuid().ToString(), icons[iconIndex], $"Item {i}", "This is the description of item {i}"));
+                _items.Add(new Item(Guid.NewGuid().ToString(), icons[iconIndex], $"Item {i}", $"This is the description of item {i}"));
             }
         }
     }
